@@ -2,6 +2,7 @@ import React from 'react';
 import './App.css';
 import ExternalFunctionalComponent from './components/ExternalFunctionalComponent.js';
 import ExternalWithClassExtendComponent  from './components/ExternalWithClassExtendComponent.js';
+import ExternalWithClassExtendAndPropsComponent from './components/ExternalWithClassExtendAndPropsComponent.js';
 
 function App() {
   return (
@@ -28,6 +29,9 @@ function App() {
         
         {/* Internal functional With Props Component */}
         <InternalFunctionalWithPropsComponent myData="#ffffff" />
+        
+        {/* External With Class Extend And Props Component */}
+        <ExternalWithClassExtendAndPropsComponent myData="#ffffff" />        
     </div>
   );
 }
