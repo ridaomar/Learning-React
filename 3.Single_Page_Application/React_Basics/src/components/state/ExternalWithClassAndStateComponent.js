@@ -12,8 +12,8 @@ class ExternalWithClassAndStateComponent extends Component {
         return <div>
             External With Class And State Component is working!
             <br/>
-            user name: <b>{this.state.user.name}</b><br/>
-            user email: <b>{this.state.user.email}</b>
+            user name: <u>{this.state.user.name}</u><br/>
+            user email: <u>{this.state.user.email}</u>
         </div>
     }
 }

@@ -5,6 +5,8 @@ import ExternalWithClassExtendComponent from './components/ExternalWithClassExte
 import ExternalWithClassExtendAndPropsComponent from './components/props/ExternalWithClassExtendAndPropsComponent.js';
 import ExternalFunctionalWithStateComponent from './components/state/ExternalWithClassAndStateComponent.js';
 import ExternalWithClassAndSetStateWithClickEventComponent from './components/state/ExternalWithClassAndSetStateWithClickEventComponent.js';
+import ExternalWithClassAndSetStateWithClickEventAndBindComponent from './components/state/ExternalWithClassAndSetStateWithClickEventAndBindComponent.js'
+import ExternalWithClassAndSetStateWithClickEventAndArrowFunctionComponent from './components/state/ExternalWithClassAndSetStateWithClickEventAndArrowFunctionComponent.js'
 
 function App() {
   return (
@@ -14,7 +16,7 @@ function App() {
 
         <h3 style={{marginBottom: 0}}>
           Types of Component
-        </h3>
+        </h3><br/>
 
         {/* Internal Functional Component */}
         <InternalFunctionalComponent  />
@@ -24,11 +26,11 @@ function App() {
 
         {/* External With Class Extend Component */}
         <ExternalWithClassExtendComponent />
-        <br/>
+        <br/><hr/>
 
         <h3 style={{marginBottom: 0}}>
           Props
-        </h3>
+        </h3><br/>
         
         {/* Internal functional With Props Component */}
         <InternalFunctionalWithPropsComponent myData="#ffffff" />
@@ -38,36 +40,54 @@ function App() {
 
         {/* Internal functional With Children Prop Component */}
         <InternalFunctionalWithChildrenPropComponent>#ffffff</InternalFunctionalWithChildrenPropComponent>
-        <br/>
+        <br/><hr/>
 
         <h3 style={{marginBottom: 0}}>
           State
-        </h3>
+        </h3><br/>
 
         {/* External Functional With State Component */}
         <ExternalFunctionalWithStateComponent />
-        <br/>
+        <br/><br/>
         
-        <h3 style={{marginBottom: 0}}>
-          Set State
-        </h3>
+        <h4 style={{marginBottom: 0}}>
+          Set State With Click Event
+        </h4>
 
         {/* External With Class And Set State With Click Event Component */}
         <ExternalWithClassAndSetStateWithClickEventComponent />
+        <br/><br/>
+        
+        <h4 style={{marginBottom: 0}}>
+          Set State With Click Event and Arrow Function
+        </h4>
+        {/* External With Class And Set State With Click Event And Arrow Function Component */}
+        <ExternalWithClassAndSetStateWithClickEventAndArrowFunctionComponent />
+
+
+        <br/><br/>
+        
+        <h4 style={{marginBottom: 0}}>
+          Set State With Click Event and Binding Function
+        </h4>
+        {/* External With Class And Set State With Click Event And Bind Component */}
+        <ExternalWithClassAndSetStateWithClickEventAndBindComponent />
+
+
     </div>
   );
 }
 
 function InternalFunctionalComponent() {
-  return <div>Internal functional component is working!</div>
+  return <div>Internal Functional Component is working!</div>
 }
 
 function InternalFunctionalWithPropsComponent(props) {
-  return <div>Internal With Props Component is working and the myData prop is: <b>{props.myData}</b></div>
+  return <div>Internal With Props Component is working and the myData prop is: <u>{props.myData}</u></div>
 }
 
 function InternalFunctionalWithChildrenPropComponent(props) {
-  return <div>Internal functional With Children Prop Component is working and the children prop is: <b>{props.children}</b></div>
+  return <div>Internal Functional With Children Prop Component is working and the children prop is: <u>{props.children}</u></div>
 }
 
 export default App;

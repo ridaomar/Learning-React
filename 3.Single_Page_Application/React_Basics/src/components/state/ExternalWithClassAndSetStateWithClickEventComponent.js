@@ -14,8 +14,8 @@ class ExternalWithClassAndSetStateWithClickEventComponent extends Component {
            <br/><br/>
            <button onClick={()=>{this.setState({user:{name:'Rida', email: 'rida.labbar@gmail.com'}})}}>Get User Data</button>
            <br/><br/>
-            user name: <b>{this.state.user.name}</b><br/>
-            user email: <b>{this.state.user.email}</b>
+            user name: <u>{this.state.user.name}</u><br/>
+            user email: <u>{this.state.user.email}</u>
        </div>
     } 
 }
