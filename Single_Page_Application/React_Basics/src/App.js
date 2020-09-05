@@ -4,6 +4,7 @@ import ExternalFunctionalComponent from './components/ExternalFunctionalComponen
 import ExternalWithClassExtendComponent  from './components/ExternalWithClassExtendComponent.js';
 import ExternalWithClassExtendAndPropsComponent from './components/ExternalWithClassExtendAndPropsComponent.js';
 import ExternalFunctionalWithStateComponent from './components/ExternalWithClassAndStateComponent.js';
+import ExternalWithClassAndSetStateWithClickEventComponent from './components/ExternalWithClassAndSetStateWithClickEventComponent.js'
 
 function App() {
   return (
@@ -46,6 +47,13 @@ function App() {
         {/* External Functional With State Component */}
         <ExternalFunctionalWithStateComponent />
         <br/>
+        
+        <h3 style={{marginBottom: 0}}>
+          Set State
+        </h3>
+
+        {/* External With Class And Set State With Click Event Component */}
+        <ExternalWithClassAndSetStateWithClickEventComponent />
     </div>
   );
 }
