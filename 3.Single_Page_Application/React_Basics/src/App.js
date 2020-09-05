@@ -7,6 +7,7 @@ import ExternalFunctionalWithStateComponent from './components/state/ExternalWit
 import ExternalWithClassAndSetStateWithClickEventComponent from './components/state/ExternalWithClassAndSetStateWithClickEventComponent.js';
 import ExternalWithClassAndSetStateWithClickEventAndBindComponent from './components/state/ExternalWithClassAndSetStateWithClickEventAndBindComponent.js'
 import ExternalWithClassAndSetStateWithClickEventAndArrowFunctionComponent from './components/state/ExternalWithClassAndSetStateWithClickEventAndArrowFunctionComponent.js'
+import SetStateWithonChangeEventandSpreadComponent from './components/state/SetStateWithonChangeEventandSpreadComponent.js'
 
 function App() {
   return (
@@ -72,7 +73,13 @@ function App() {
         </h4>
         {/* External With Class And Set State With Click Event And Bind Component */}
         <ExternalWithClassAndSetStateWithClickEventAndBindComponent />
-
+        <br/><br/>
+        
+        <h4 style={{marginBottom: 0}}>
+          Set State With onChange Event and Spread
+        </h4>
+        {/* External With Class And Set State With Click Event And Bind Component */}
+        <SetStateWithonChangeEventandSpreadComponent />
 
     </div>
   );
