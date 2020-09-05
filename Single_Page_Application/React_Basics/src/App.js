@@ -1,5 +1,6 @@
 import React from 'react';
 import './App.css';
+import ExternalFunctionalComponent from './components/ExternalFunctionalComponent.js';
 
 function App() {
   return (
@@ -13,6 +14,9 @@ function App() {
 
         {/* Internal Functional Component */}
         <InternalFunctionalComponent  />
+
+        {/* External Functional Component */}
+        <ExternalFunctionalComponent />
     </div>
   );
 }
