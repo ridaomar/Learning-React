@@ -1,0 +1,4 @@
+To serve the app you can use "serve" in CLI
+
+* to install serve
+npm i serve -g
