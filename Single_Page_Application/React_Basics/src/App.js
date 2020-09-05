@@ -21,12 +21,23 @@ function App() {
 
         {/* External With Class Extend Component */}
         <ExternalWithClassExtendComponent />
+
+        <h3 style={{marginBottom: 0}}>
+          Props
+        </h3>
+        
+        {/* Internal functional With Props Component */}
+        <InternalFunctionalWithPropsComponent myData="#ffffff" />
     </div>
   );
 }
 
 function InternalFunctionalComponent() {
   return <div>Internal functional component is working!</div>
+}
+
+function InternalFunctionalWithPropsComponent(props) {
+  return <div>Internal With Props Component is working and the myData prop is: <b>{props.myData}</b></div>
 }
 
 export default App;
