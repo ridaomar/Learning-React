@@ -3,6 +3,7 @@ import './App.css';
 import ExternalFunctionalComponent from './components/ExternalFunctionalComponent.js';
 import ExternalWithClassExtendComponent  from './components/ExternalWithClassExtendComponent.js';
 import ExternalWithClassExtendAndPropsComponent from './components/ExternalWithClassExtendAndPropsComponent.js';
+import ExternalFunctionalWithStateComponent from './components/ExternalWithClassAndStateComponent.js';
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
 
         {/* External With Class Extend Component */}
         <ExternalWithClassExtendComponent />
+        <br/>
 
         <h3 style={{marginBottom: 0}}>
           Props
@@ -34,7 +36,16 @@ function App() {
         <ExternalWithClassExtendAndPropsComponent myData="#ffffff" />      
 
         {/* Internal functional With Children Prop Component */}
-        <InternalFunctionalWithChildrenPropComponent>#ffffff</InternalFunctionalWithChildrenPropComponent>          
+        <InternalFunctionalWithChildrenPropComponent>#ffffff</InternalFunctionalWithChildrenPropComponent>
+        <br/>
+
+        <h3 style={{marginBottom: 0}}>
+          State
+        </h3>
+
+        {/* External Functional With State Component */}
+        <ExternalFunctionalWithStateComponent />
+        <br/>
     </div>
   );
 }
