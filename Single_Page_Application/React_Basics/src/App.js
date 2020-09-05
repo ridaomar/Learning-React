@@ -1,6 +1,7 @@
 import React from 'react';
 import './App.css';
 import ExternalFunctionalComponent from './components/ExternalFunctionalComponent.js';
+import ExternalWithClassExtendComponent  from './components/ExternalWithClassExtendComponent.js';
 
 function App() {
   return (
@@ -17,6 +18,9 @@ function App() {
 
         {/* External Functional Component */}
         <ExternalFunctionalComponent />
+
+        {/* External With Class Extend Component */}
+        <ExternalWithClassExtendComponent />
     </div>
   );
 }
