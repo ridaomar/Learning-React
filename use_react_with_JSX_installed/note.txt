@@ -1,0 +1,12 @@
+Add JSX to a Project:
+1. npm init -y
+2. npm install babel-cli@6 babel-preset-react-app@3
+
+To Run JSX Preprocessor:
+npx babel --watch src --out-dir . --presets react-app/prod 
+
+
+To serve the app you can just use "serve" in CLI
+
+* to install serve
+npm i serve -g
