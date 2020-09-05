@@ -1,10 +1,10 @@
 import React from 'react';
 import './App.css';
 import ExternalFunctionalComponent from './components/ExternalFunctionalComponent.js';
-import ExternalWithClassExtendComponent  from './components/ExternalWithClassExtendComponent.js';
-import ExternalWithClassExtendAndPropsComponent from './components/ExternalWithClassExtendAndPropsComponent.js';
-import ExternalFunctionalWithStateComponent from './components/ExternalWithClassAndStateComponent.js';
-import ExternalWithClassAndSetStateWithClickEventComponent from './components/ExternalWithClassAndSetStateWithClickEventComponent.js'
+import ExternalWithClassExtendComponent from './components/ExternalWithClassExtendComponent.js';
+import ExternalWithClassExtendAndPropsComponent from './components/props/ExternalWithClassExtendAndPropsComponent.js';
+import ExternalFunctionalWithStateComponent from './components/state/ExternalWithClassAndStateComponent.js';
+import ExternalWithClassAndSetStateWithClickEventComponent from './components/state/ExternalWithClassAndSetStateWithClickEventComponent.js';
 
 function App() {
   return (
