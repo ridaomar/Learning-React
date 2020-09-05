@@ -31,7 +31,10 @@ function App() {
         <InternalFunctionalWithPropsComponent myData="#ffffff" />
         
         {/* External With Class Extend And Props Component */}
-        <ExternalWithClassExtendAndPropsComponent myData="#ffffff" />        
+        <ExternalWithClassExtendAndPropsComponent myData="#ffffff" />      
+
+        {/* Internal functional With Children Prop Component */}
+        <InternalFunctionalWithChildrenPropComponent>#ffffff</InternalFunctionalWithChildrenPropComponent>          
     </div>
   );
 }
@@ -42,6 +45,10 @@ function InternalFunctionalComponent() {
 
 function InternalFunctionalWithPropsComponent(props) {
   return <div>Internal With Props Component is working and the myData prop is: <b>{props.myData}</b></div>
+}
+
+function InternalFunctionalWithChildrenPropComponent(props) {
+  return <div>Internal functional With Children Prop Component is working and the children prop is: <b>{props.children}</b></div>
 }
 
 export default App;
